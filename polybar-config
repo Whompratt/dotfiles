@@ -24,6 +24,7 @@ height = 27
 ;offset-x = 1%
 ;offset-y = 1%
 fixed-center = false
+separator = "  |"
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -44,9 +45,9 @@ font-0 = Roboto Mono:size=10;0
 #font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 #font-2 = siji:pixelsize=10;1
 
-modules-left = bspwm i3
+modules-left = i3
 modules-center = 
-modules-right = filesystem xbacklight volume xkeyboard memory cpu wlan eth battery temperature date powermenu
+modules-right = xbacklight volume wlan battery filesystem memory cpu temperature date
 
 tray-position = right
 tray-padding = 2
@@ -67,34 +68,14 @@ tray-padding = 2
 cursor-click = pointer
 cursor-scroll = ns-resize
 
-[module/xwindow]
-type = internal/xwindow
-label = %title:0:30:...%
-
-[module/xkeyboard]
-type = internal/xkeyboard
-blacklist-0 = num lock
-
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
-format-prefix-underline = ${colors.secondary}
-
-label-layout = %layout%
-label-layout-underline = ${colors.secondary}
-
-label-indicator-padding = 2
-label-indicator-margin = 1
-label-indicator-background = ${colors.secondary}
-label-indicator-underline = ${colors.secondary}
-
 [module/filesystem]
 type = internal/fs
 interval = 25
 
 mount-0 = /
 
-label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
-label-unmounted = %mountpoint% not mounted
+label-mounted = dsk: %percentage_used%%
+label-unmounted = dsk not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
 [module/bspwm]
