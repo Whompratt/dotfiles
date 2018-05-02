@@ -1,0 +1,29 @@
+URxvt.background:	#404242
+URxvt.foreground:	#e2f6d6
+
+URxvt.cursorColor:	#eef4d4
+URxvt.pointerColor:	#ff00d8
+URxvt.pointerColor2:	#ff00d8
+
+URxvt.color1:		#00ff2e
+URxvt.color2:		#00ff2e
+URxvt.color3:		#00ff2e
+URxvt.color4:		#00ff2e
+URxvt.color5:		#00ff2e
+URxvt.color6:		#5a7d7c
+URxvt.color7:		#00ff2e
+URxvt.color8:		#00ff2e
+URxvt.color9:		#00ff2e
+URxvt.color10:		#b6e5ce
+URxvt.color11:		#afc2d5
+URxvt.color12:		#6fedd4
+URxvt.color13:		#f24b55
+URxvt.color14:		#6fedd4
+URxvt.color15:		#ff00d8
+
+URxvt.cursorBlink:	true
+URxvt.cursorUnderline:	true
+URxvt.saveLines:	true
+
+URxvt.scrollBar:	false
+URxvt.font:		xft:Overpass Mono:size=11:antialias=true
