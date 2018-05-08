@@ -20,10 +20,10 @@ alert = #00ff00
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 25
+height = 27
 ;offset-x = 1%
 ;offset-y = 1%
-fixed-center = false
+fixed-center = true
 separator = "  |"
 
 background = ${colors.background}
@@ -32,23 +32,22 @@ foreground = ${colors.foreground}
 line-size = 2
 line-color = #00ff00
 
-border-size = 5
-border-bottom-size = 0
+border-size = 0
 border-color = #00000000
 
 padding-left = 0
 padding-right = 1
 
-module-margin-left = 2
-module-margin-right = 0
+module-margin = 1
 
-font-0 = Roboto Mono:size=9;0
-#font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-#font-2 = siji:pixelsize=10;1
+font-0 = Roboto Mono:size=10;0
+font-1 = "Font Awesome 5 Free:style=Reguler:pixelsize=11;3"
+font-2 = "Font Awesome 5 Free:style=Solid:pixelsize=11;3"
+font-3 = "Font Awesome 5 Brands:pixelsize=11;3"
 
-modules-left = i3
-modules-center = 
-modules-right = xbacklight volume wlan battery filesystem memory cpu temperature date
+modules-left = battery volume wifi keyboard
+modules-center = i3
+modules-right = xwindow date
 
 tray-position = right
 tray-padding = 2
@@ -113,23 +112,23 @@ label-mode-foreground = #000
 label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
-label-focused = %name%
+label-focused = %index%
 label-focused-background = ${module/bspwm.label-focused-background}
 label-focused-underline = ${module/bspwm.label-focused-underline}
 label-focused-padding = ${module/bspwm.label-focused-padding}
 
 ; unfocused = Inactive workspace on any monitor
-label-unfocused = %name%
+label-unfocused = %index%
 label-unfocused-padding = ${module/bspwm.label-occupied-padding}
 
 ; visible = Active workspace on unfocused monitor
-label-visible = %name%
+label-visible = %index%
 label-visible-background = ${self.label-focused-background}
 label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-focused-padding}
 
 ; urgent = Workspace with urgency hint set
-label-urgent = %name%
+label-urgent = %index%
 label-urgent-background = ${module/bspwm.label-urgent-background}
 label-urgent-padding = ${module/bspwm.label-urgent-padding}
 
