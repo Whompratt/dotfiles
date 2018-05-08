@@ -1,29 +1,58 @@
+! Generic color settings TODO
+! Black
+*color0:		#1a1e24
+*color8:		#3b4453
+
+! Pastel Red
+*color1:		#ed5554
+*color9:		#ed5554
+
+! Bright Red
+*color2:		#f03e3d
+*color10:		#f03e3d
+
+! Dark Red
+*color3:		#ce2322
+*color11:		#ce2322
+
+! Pastel Blue
+*color4:		#6f9db6
+*color12:		#6f9db6
+
+! Bright Blue
+*color5:		#4f93b7
+*color13:		#4f93b7
+
+! Blue
+*color6:		#2d7196
+*color14:		#2d7196
+
+! Dark Blue
+*color7:		#cfcfcf
+*color15:		#3b4453
+
+*color130:		#ff00d8
+
+! URxvt settings
 URxvt.background:	#404242
 URxvt.foreground:	#e2f6d6
+URxvt.colorUL:		#ff00d8
 
 URxvt.cursorColor:	#eef4d4
+URxvt.cursorBlink:	true
+URxvt.cursorUnderline:	true
+
 URxvt.pointerColor:	#ff00d8
 URxvt.pointerColor2:	#ff00d8
 
-URxvt.color1:		#00ff2e
-URxvt.color2:		#00ff2e
-URxvt.color3:		#00ff2e
-URxvt.color4:		#00ff2e
-URxvt.color5:		#00ff2e
-URxvt.color6:		#5a7d7c
-URxvt.color7:		#00ff2e
-URxvt.color8:		#00ff2e
-URxvt.color9:		#00ff2e
-URxvt.color10:		#b6e5ce
-URxvt.color11:		#afc2d5
-URxvt.color12:		#6fedd4
-URxvt.color13:		#f24b55
-URxvt.color14:		#6fedd4
-URxvt.color15:		#ff00d8
-
-URxvt.cursorBlink:	true
-URxvt.cursorUnderline:	true
-URxvt.saveLines:	true
-
+URxvt.saveLines:	400
+URxvt.lineSpace:	0
 URxvt.scrollBar:	false
 URxvt.font:		xft:Overpass Mono:size=11:antialias=true
+URxvt.letterSpace:	0
+
+! Rofi settings
+rofi.modi:		combi
+rofi.combi:		run,window
+rofi.lines:		10
+rofi.fullscreen:	true
