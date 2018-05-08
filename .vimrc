@@ -1,5 +1,5 @@
 set nocompatible
-filetype off
+filetype plugin on
 
 syntax enable
 
@@ -17,3 +17,6 @@ let g:lightline = {
 
 set laststatus=2
 set nu
+set omnifunc=syntaxcomplete#Complete
+set completeopt=longest,menuone
+iabbrev </ </<C-X><C-O>

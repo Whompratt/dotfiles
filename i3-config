@@ -175,6 +175,11 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 bindsym XF86AudioRaiseVolume exec amixer -q sset Master 2%+
 bindsym XF86AudioLowerVolume exec amixer -q sset Master 2%-
 bindsym XF86AudioMute exec amixer -q sset Master toggle
+# And Spotify support
+bindsym XF86AudioPlay exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
+bindsym XF86AudioPrev exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
+bindsym XF86AudioNext exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
+
 
 # Gap settings
 gaps inner 2
