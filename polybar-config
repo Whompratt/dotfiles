@@ -42,7 +42,7 @@ padding-right = 1
 module-margin-left = 2
 module-margin-right = 0
 
-font-0 = Roboto Mono:size=9;0
+font-0 = Hasklug Nerd Font Mono:size=9;0
 #font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 #font-2 = siji:pixelsize=10;1
 
@@ -51,7 +51,7 @@ modules-center =
 modules-right = xbacklight volume wlan battery filesystem memory cpu temperature date
 
 tray-position = right
-tray-padding = 2
+tray-padding = 0
 ;tray-transparent = true
 ;tray-background = #0063ff
 
@@ -86,18 +86,18 @@ type = internal/bspwm
 label-focused = %index%
 label-focused-background = ${colors.background-alt}
 label-focused-underline= ${colors.primary}
-label-focused-padding = 2
+label-focused-padding = 1
 
 label-occupied = %index%
-label-occupied-padding = 2
+label-occupied-padding = 1
 
 label-urgent = %index%!
 label-urgent-background = ${colors.alert}
-label-urgent-padding = 2
+label-urgent-padding = 1
 
 label-empty = %index%
 label-empty-foreground = ${colors.foreground-alt}
-label-empty-padding = 2
+label-empty-padding = 1
 
 [module/i3]
 type = internal/i3
@@ -108,7 +108,7 @@ wrapping-scroll = false
 ; Only show workspaces on the same output as the bar
 ;pin-workspaces = true
 
-label-mode-padding = 2
+label-mode-padding = 1
 label-mode-foreground = #000
 label-mode-background = ${colors.primary}
 

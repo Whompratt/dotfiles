@@ -48,7 +48,7 @@ URxvt.pointerColor2:	#ff00d8
 URxvt.saveLines:	400
 URxvt.lineSpace:	0
 URxvt.scrollBar:	false
-URxvt.font:		xft:Overpass Mono:size=11:antialias=true
+URxvt.font:		xft:Hasklug Nerd Font Mono:size=11
 URxvt.letterSpace:	0
 
 ! Rofi settings
