@@ -196,13 +196,6 @@ exec_always --no-startup-id compton -f --config ~/.config/compton.conf
 exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpaper.jpg
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
-# Open startup programs on workspaces
-exec --no-startup-id firefox
-exec --no-startup-id thunderbird
-assign [class="Firefox"] Firefox
-assign [class="Thunderbird"] Thunderbird
-# Fuck spotify
-
 # Hotkeys
 # Lockscreen
 bindsym $mod+shift+x exec betterlockscreen --lock
