@@ -5,7 +5,7 @@ padding:	0px;
 }
 
 .Header {
-margin:		auto;
+margin:		30px auto 40px auto;
 width:		40%;
 }
 
@@ -36,6 +36,7 @@ flex-direction:	row;
 justify-content:space-between;
 width:	 	80%;
 margin:		0 auto;
+margin-top:	50px;
 padding:	0px;
 }
 
@@ -51,26 +52,39 @@ font-weight:	300;
 }
 
 .Links a {
-margin:		0px;
-padding:	0px;
 }
 
 .Links a:link, a:visited, a:active {
 color:		#e2f6d6;
 text-decoration:none;
+padding:	10px;
+margin:		10px 0;
 }
 
 .Links h2 {
 font-family:	'Roboto', sans-serif;
 font-weight:	300;
-padding:	0;
+padding:	10px;
 margin:		0;
+color:		#e2f6d6;
 }
 
 .LinkBox {
-width:		25%;
+width:		20%;
 height:		200px;
 background:	#1b1d1e;
 margin:		10px;
 padding:	10px;
+}
+
+.Reddit h2 {
+background:	#6f9db6;
+}
+
+.Social h2 {
+background:	#ed5554;
+}
+
+.Productivity h2 {
+background:	#6f9db6;
 }
